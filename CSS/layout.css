@@ -1,0 +1,14 @@
+header{
+    background-color:midnightblue;
+}
+aside{
+    background-color: rosybrown;
+    width: 250px;
+    height: 250px;
+}
+main{
+    background: antiquewhite;
+}
+footer{
+    background-color: #535870;
+}
