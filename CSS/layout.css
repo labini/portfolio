@@ -1,14 +1,51 @@
-header{
-    background-color:midnightblue;
+header {
+    background-color: midnightblue;
+    grid-area: header;
 }
-aside{
+
+aside {
     background-color: rosybrown;
     width: 250px;
-    height: 250px;
+    /*height: 250px;*/
+    grid-area: aside;
 }
-main{
+
+main {
     background: antiquewhite;
+    grid-area: main;
 }
-footer{
+
+footer {
     background-color: #535870;
+    grid-area: footer;
+}
+
+#grid {
+    display: grid;
+    grid-template-areas: 'header header ' 'aside main' 'footer footer';
+    grid-template-columns: 250px 600px;
+}
+
+body {
+    /*display: flex;*/
+    justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+    #grid {
+        grid-template-areas: 'header header ' 'main main' 'aside footer';
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #grid {
+        grid-template-areas: 'header' 'main ' 'aside' 'footer';
+        grid-template-columns: 160px auto;
+    }
+
+    img {
+        width: 60%;
+    }
+
+
 }
