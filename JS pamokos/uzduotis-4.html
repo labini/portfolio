@@ -5,15 +5,40 @@
 <p>Mano pirmasis paragrafas.</p>
 
 <script>
-let min=0;
-let max = 0;
-var a=-5;
-var b=0;
-var c=-4;
-var d=4;
-// if ()
+    let min = 0;
+    let max = 0;
+    var a = -5;
+    var b = 6;
+    var c = -4;
+    var d = 4;
+    if (c > a && d > b) {
+        for (let i = a; i < d; i++) {
+            if (i == c) {
+                min = i;
+            }
+            if (i == b) {
+                max = i;
+            }
 
-    document.write(5 + 6);
+        }
+        document.write("atkarpu sankirta yra [ " + min + ";" + max + "]")
+    } else if (c > a && b >= d) {
+        for (let i = a; i < b; i++) {
+            if (i == c) {
+                min = i;
+            }
+            if (i == d) {
+                max = i;
+            }
+
+        }
+        document.write("atkarpu sankirta yra [ " + min + ";" + max + "]")
+
+    } else {
+        document.write("Kintamieji neatitinka uždaviio sąlygos");
+    }
+
+
 </script>
 </body>
 </html>
