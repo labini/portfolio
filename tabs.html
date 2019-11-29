@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Apie Portfolio</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/tabs.css">
+
+</head>
+<body>
+<header>
+    <div class="tab">
+        <button class="tablinks" onclick="openSheet(event, 'Index')">Home</button>
+        <button class="tablinks" onclick="openSheet(event, 'uzduotis2-1')">lempute</button>
+        <button class="tablinks" onclick="openSheet(event, 'Kontaktai')">Kontaktai</button>
+    </div>
+
+    <div id="home" class="tabcontent">
+        <h3>Home</h3>
+        <p>This is your standard home page</p>
+    </div>
+
+    <div id="lempute" class="tabcontent">
+        <h3>Lempute</h3>
+        <p>Stai tau ir lempute</p>
+    </div>
+
+    <div id="Kontaktai" class="tabcontent">
+        <h3>Kontaktai</h3>
+        <p>Paskambink kam nors nes cia yra kontaktai.</p>
+    </div>
+</header>
+<aside>
+</aside>
+
+<main>
+    <div class="sheetai">
+        <div class="sheet" if="sheet1">
+            Siame tekste rasite visa chronologiska
+            <br>
+            Programavimo Pagrindu per 6 savaites kurso archyva.
+            <br>
+        </div>
+        <div class="sheet" if="sheet2">2</div>
+        <div class="sheet" if="sheet3">3</div>
+    </div>
+</main>
+
+<footer>
+    Aciu, kad lanketes
+</footer>
+
+</body>
+</html>
