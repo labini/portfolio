@@ -36,24 +36,23 @@ main {
     padding-right: 5px;
     padding-bottom: 10px;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-columns: 17% 17% 17% 17% 17% 17%;
+    grid-template-rows: 90px 90px 90px 90px 90px 90px 90px;
 }
 
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid darkgreen;
     border-radius: 10px;
-    padding: 20px;
+    padding: 5px;
     margin: 1px;
     font-size: 14px;
     text-align: center;
+    width: 50px;
+    height: 50px;
 
 }
 
-#t8 {
-    visibility: hidden;
-}
 
 aside#right {
     grid-area: a;
@@ -68,9 +67,7 @@ aside#right {
     text-shadow: 0px 1px 1px darkkhaki;
     /*text-shadow: 1px 1px darkkhaki;*/
 }
-#choose{
 
-}
 
 footer {
     grid-area: f;
@@ -102,4 +99,28 @@ header div#title {
     color: #5c8f45;
     font-variant: small-caps;
 
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }

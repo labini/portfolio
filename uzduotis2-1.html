@@ -1,21 +1,54 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").click(function () {
+                $(this).hide();
+            });
 
-<img id="myImage" onclick="changeImage()" src="img/lboff.png" width="100" height="180" >
+        });
+        $(button).click(function () {
+            $("p").show();
+        });
+    </script>
+
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+        $("p").click(function () {
+            $(this).hide();
+        });
+
+
+        $("button").click(function () {
+            $("p").show();
+        });
+    });
+</script>
+
+<!--<img id="myImage" onclick="changeImage()" src="img/lboff.png" width="100" height="180" >-->
+
 
 <p>Click the light bulb to turn on/off the light.</p>
 
-<script>
-    function changeImage() {
-        var image = document.getElementById('myImage');
-        if (image.src.match("lbon")) {
-            image.src = "img/lboff.png";
-        } else {
-            image.src = "img/lbon.png";
-        }
-    }
-</script>
+<p>Find a bulb first :)</p>
+
+<button>Reset</button>
+
+<!--<script>-->
+<!--    function changeImage() {-->
+<!--        var image = document.getElementById('myImage');-->
+<!--        if (image.src.match("lbon")) {-->
+<!--            image.src = "img/lboff.png";-->
+<!--        } else {-->
+<!--            image.src = "img/lbon.png";-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
 
 </body>
 </html>
