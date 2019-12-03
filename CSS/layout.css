@@ -1,12 +1,12 @@
 header {
     background-color: midnightblue;
     grid-area: header;
+    justify-self:center;
 }
 
 aside {
     background-color: rosybrown;
     width: 250px;
-    /*height: 250px;*/
     grid-area: aside;
 }
 
@@ -27,7 +27,6 @@ footer {
 }
 
 body {
-    /*display: flex;*/
     justify-content: center;
 }
 

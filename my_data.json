@@ -1,11 +1,11 @@
 [
   {
     "pavadinimas": "Apie",
-    "adresas": "/"
+    "adresas": "main.html"
   },
   {
     "pavadinimas": "Portfolio",
-    "adresas": "final.html"
+    "adresas": "portfolio.html"
   },
   {
     "pavadinimas": "Kontaktai",
