@@ -1,70 +1,93 @@
 <!DOCTYPE html>
 <html lang="lt">
 <head>
-    <lang>lt</lang>
+
     <title> Froggie </title>
     <link rel="stylesheet" href="CSS/final.css">
 
 </head>
 
-<body>
-<header>
-    <!--            style="display: inline">-->
-    <div id="logo">
-        <img src="img/5de41ddabe3fb.png" width="128" height="128"></img>
-    </div>
-    <div id="title">Froggie</div>
+<body class="content">
+<div class="body">
+    <header>
+        <!--            style="display: inline">-->
+        <div id="logo">
+            <img src="img/5de41ddabe3fb.png" width="128" height="128"></img>
+        </div>
+        <div id="title">Froggie</div>
+        <div id="tatle">Kad mokytis butu smagiau</div>
 
-</header>
-<aside id="left">
-    <h3> Cia gal idesiu laikmati </h3>
+    </header>
+    <aside id="left">
+        <h3> Anglu kalbos mokymosi zaidimas </h3> <br>
+        <p>Surask ir paspausk teisingas zodziu poras.</p><br>
+        <p>Noredamas pradeti is naujo, spausk mygtuka </p><p style="font-variant: small-caps; font-weight: bolder">"perkrauti" </p>
 
-</aside>
+    </aside>
 
-<aside id="right">
-    <div id="choose"><p>Pasirink, kiek<br> zodziu nori kartoti</p>
-    </div>
-    <div>
-        <img src="img/lilypadsminimal.png" alt="lilypad menu" usemap="#workmap">
+    <aside id="right">
+        <h3>Pasirink, kiek<br> zodziu nori kartoti:</h3>
 
-        <map name="workmap">
-            <area id="10w" shape="circle" coords="64,51,25" alt="10 words" href="final.html" title="10 zodziu">
-            <area id="14w" shape="circle" coords="114,177,30" alt="12 words" href="final14.html" title="14 zodziu">
-            <area id="21w" shape="circle" coords="69,301,44" alt="21 words" href="final21.html" title="21 zodi">
-        </map>
+        <div>
+            <img src="img/lilypadsminimal.png" alt="lilypad menu" usemap="#workmap">
 
-    </div>
-</aside>
+            <map name="workmap">
+                <area id="10w" shape="circle" coords="64,51,25" alt="10 words" href="final.html" title="10 zodziu">
+                <area id="14w" shape="circle" coords="114,177,30" alt="12 words" href="final14.html" title="14 zodziu">
+                <area id="21w" shape="circle" coords="69,301,44" alt="21 words" href="final21.html" title="21 zodi">
+            </map>
 
-<main>
-    <div class="grid-container">
-        <div data-name="t1" class="grid-item ">hello</div>
-        <div data-name="t2" class="grid-item card">vakar</div>
-        <div data-name="t3" class="grid-item card">paprastas</div>
-        <div data-name="t4" class="grid-item card">how?</div>
-        <div data-name="t5" class="grid-item card">5</div>
-        <div data-name="t6" class="grid-item card">sun</div>
-        <div data-name="t7" class="grid-item card">she</div>
-        <div data-name="t1" class="grid-item card">labas</div>
-        <div data-name="t3" class="grid-item card">simple</div>
-        <div data-name="t5" class="grid-item card">10</div>
-        <div data-name="t4" class="grid-item card">kaip?</div>
-        <div data-name="t8" class="grid-item card">12</div>
-        <div data-name="t9" class="grid-item card">batai</div>
-        <div data-name="t2" class="grid-item card">yesterday</div>
-        <div data-name="t10" class="grid-item card">15</div>
-        <div data-name="t7" class="grid-item card">ji</div>
-        <div data-name="t8" class="grid-item card">17</div>
-        <div data-name="t6" class="grid-item card">saule</div>
-        <div data-name="t10" class="grid-item card">19</div>
-        <div data-name="t9" class="grid-item card">shoes</div>
+        </div>
+    </aside>
 
-    </div>
-</main>
+    <main>
+        <div class="tool-container">
 
-<footer>
+            <div class="tools clock">clock</div>
+            <div class="tools restart">
+                <img onclick="reset()" src="img/hiclipart.com.png" alt="restart" width="25px" height="25px" >
+            </div>
 
-</footer>
+        </div>
+        <div class="grid-container">
+            <div data-name="blank" class="grid-item blank"></div>
+            <div data-name="t1" class="grid-item card">hello</div>
+            <div data-name="t2" class="grid-item card">vakar</div>
+            <div data-name="t3" class="grid-item card">paprastas</div>
+            <div data-name="t4" class="grid-item card">how?</div>
+            <div data-name="blank" class="grid-item blank"></div>
+            <div data-name="blank" class="grid-item blank"></div>
+            <div data-name="t5" class="grid-item card">duona</div>
+            <div data-name="t6" class="grid-item card">sun</div>
+            <div data-name="t7" class="grid-item card">she</div>
+            <div data-name="t1" class="grid-item card">labas</div>
+            <div data-name="blank" class="grid-item blank"></div>
+            <div data-name="blank" class="grid-item blank"></div>
+            <div data-name="t3" class="grid-item card">simple</div>
+            <div data-name="t5" class="grid-item card">bread</div>
+            <div data-name="t4" class="grid-item card">kaip?</div>
+            <div data-name="t8" class="grid-item card">happiness</div>
+            <div data-name="blank" class="grid-item blank"></div>
+            <div data-name="blank" class="grid-item blank"></div>
+            <div data-name="t9" class="grid-item card">batai</div>
+            <div data-name="t2" class="grid-item card">yesterday</div>
+            <div data-name="t10" class="grid-item card">grateful</div>
+            <div data-name="t7" class="grid-item card">ji</div>
+            <div data-name="blank" class="grid-item blank"></div>
+            <div data-name="blank" class="grid-item blank"></div>
+            <div data-name="t8" class="grid-item card">laime</div>
+            <div data-name="t6" class="grid-item card">saule</div>
+            <div data-name="t10" class="grid-item card">dekingas</div>
+            <div data-name="t9" class="grid-item card">shoes</div>
+            <div data-name="blank" class="grid-item blank"></div>
+
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</div>
 <script src="JS/final.js"></script>
 </body>
 </html>
