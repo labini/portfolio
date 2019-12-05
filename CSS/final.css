@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -36,9 +36,10 @@ aside#left {
     -webkit-box-shadow: inset 0 0 5px #000000;
     box-shadow: inset 0 0 5px #000000;
 }
-aside#left p{
+
+aside#left p {
     /*background-color: rgba(129, 123, 105, 0.4) ;*/
-    margin : 6px;
+    margin: 6px;
 }
 
 main {
@@ -50,29 +51,43 @@ main {
     /*-webkit-box-shadow: inset 0 0 5px #000000;*/
     /*box-shadow: inset 0 0 5px #000000;*/
 }
-.tool-container{
+
+.tool-container {
     padding-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 0px;
-    margin:auto;
+    margin: auto;
     display: grid;
     grid-template-columns: 49% 49%;
-    grid-template-rows:auto;
+    grid-template-rows: auto;
 }
-.tool-container .clock{
-    padding-right: 20px;
-    justify-self: end;
-    align-self: center;
-}
-.tool-container .restart{
+
+.tool-container .timer {
     padding-left: 20px;
-    justify-self: start;
+    padding-right: 20px;
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: inset 1px 2px 2px #5F874D;
+    align-self: center;
+    font-size: 14pt;
+    color: #5f874d;
+
+    /*text-shadow: 0px 1px 1px #4d4d4d;*/
+    justify-self: center;
+}
+
+.tool-container .restart {
+    padding-left: 20px;
+    justify-self: center;
     align-self: center;
     transform: scale(1);
-   }
-.restart:active{
-    transform:scale(.97);
+}
+
+.restart:active {
+    transform: scale(.97);
     opacity: 30%;
     transition: transform .2s;
 }
@@ -82,47 +97,61 @@ main {
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 10px;
-    margin:auto;
+    margin: auto;
     display: grid;
     grid-template-columns: 16.9% 16.9% 16.9% 16.9% 16.9% 16.9%;
     grid-template-rows: 90px 90px 90px 90px 90px 90px 90px;
-    /*justify-content: center;*/
+    /*text-align: center;*/
+    /*;*/
+    /*justify-text: center;*/
 }
 
 .grid-item {
+
     background-color: rgba(255, 255, 255, 0.6);
     border: 1px solid darkgreen;
     border-radius: 10px;
-    padding: 0px;
-    margin: 0px;
-    font-size: 14px;
-    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin: auto;
+    font-size: 100%;
+    font-weight: bold;
     width: 95%;
     height: 90%;
     transform: scale(1);
+    text-align: center;
+    color: darkslategrey;
 
-    /*transition: background 400ms ease-in-out;*/
+    vertical-align: center;
+    font-family: "Segoe Script", sans-serif;
+    font-variant: small-caps;
+
+    transition: background 400ms ease-in-out;
     box-shadow: 0.5px 1px 0.5px 0px seagreen;
 
 }
-.grid-item:active{
-    transform:scale(.97);
+
+.grid-item:active {
+    transform: scale(.97);
     transition: transform .2s;
 }
-.grid-item.hlight{
+
+.grid-item.hlight {
     /*border: 2px solid forestgreen;*/
     background-color: rgba(34, 139, 34, 0.3);
 }
-.grid-item.invisible{
+
+.grid-item.invisible {
 
     visibility: hidden;
 }
-.grid-item.blank{
+
+.grid-item.blank {
 
     visibility: hidden;
 }
 
-h3{
+h3 {
     background-color: rgba(129, 123, 105, 0.3);
     font-family: "Segoe Script", sans-serif;
     justify-content: center;
@@ -135,16 +164,17 @@ h3{
     justify-self: center;
 }
 
-aside p{
+aside p {
     font-family: "Segoe Script", sans-serif;
     justify-content: center;
     color: khaki;
     /*font-weight: bold;*/
     text-shadow: 1px 1px 1px darkgreen;
-    font-size:10pt;
+    font-size: 10pt;
     padding-left: 5px;
 
 }
+
 aside#right {
     grid-area: a;
     background-color: #5f874d;
@@ -157,7 +187,6 @@ aside#right {
     -webkit-box-shadow: inset 0 0 5px #000000;
     box-shadow: inset 0 0 5px #000000;
 }
-
 
 
 footer {
@@ -192,8 +221,9 @@ header #title {
     margin-bottom: 0;
 
 }
+
 header #tatle {
-border-top: 1px solid #5f874d;
+    border-top: 1px solid #5f874d;
     text-shadow: 0px 1px 1px #4d4d4d;
     justify-self: center;
     align-self: start;
@@ -204,11 +234,11 @@ border-top: 1px solid #5f874d;
     color: #5f874d;
     padding-top: 0;
     margin-top: 0;
-/*    !*font-variant: small-caps;*!*/
+    /*    !*font-variant: small-caps;*!*/
 
 }
 
-.content{
+.content {
     max-width: 960px;
     min-width: 800px;
     margin: auto;
